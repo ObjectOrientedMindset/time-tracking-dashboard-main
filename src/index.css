@@ -1,13 +1,198 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Rubik:wght@300;400;500&display=swap');
+
+
+.attribution {
+  margin-left: 40%;
+  color: white;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'DM Sans', sans-serif;
+  font-family: 'Rubik', sans-serif;
+  background-color: hsl(226, 43%, 10%);
+}
+
+.card-container {
+  margin-left: 3rem;
+  display: grid;
+  grid-template-columns: repeat(3, 200px);
+  column-gap: 3rem;
+}
+
+.cardboard-container {
+  margin-left: 10%;
+  margin-top: 200px;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+}
+
+.jeremy-card {
+  width: 200px;
+  background-color: hsl(235, 46%, 20%);
+  border-radius: 15px;
+}
+
+.main-section {
+  background-color: hsl(246, 80%, 60%);
+  border-radius: 15px;
+  color: white;
+  height: 275px;
+}
+
+.report-for {
+  margin: 0;
+  color: hsl(236, 100%, 87%);
+  margin-left: 25px;
+  font-size: small;
+}
+
+.jeremy {
+  margin: 0;
+  margin-left: 25px;
+  font-size: x-large;
+  font-weight: 300;
+}
+
+.jeremy-img {
+  margin: 25px;
+  width: 60px;
+  height: auto;
+  border: 3px solid white;
+  border-radius: 50%;
+}
+
+.sub {
+  color: hsl(236, 100%, 87%);
+  margin: 25px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+}
+
+.icon-container {
+  height: 65px;
+  background-color: hsl(15, 100%, 70%);
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  position: relative;
+  overflow: hidden;
+}
+
+.card-icon {
+  position: absolute;
+  right: 15px;
+  top: -10px;
+}
+
+.desc-container {
+  background-color: hsl(235, 46%, 20%);
+  border-radius: 20px;
+  color: white;
+  position: relative;
+  margin-top: -25px;
+  height: 160px;
+}
+
+.title-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.card-ellipsis {
+  padding: 25px;
+  width: 21px;
+  height: 5px;
+}
+
+.card-title {
+  font-weight: 400;
+  padding-left: 25px;
+}
+
+.card-time {
+  padding-left: 25px;
+  margin-top: 0;
+  font-weight: 300;
+  font-size: 44px;
+}
+
+.card-explanation {
+  padding-left: 25px;
+  margin-top: -30px;
+  color: hsl(236, 100%, 87%);
+  font-size: small;
+}
+
+@media (max-width:1100px) {
+  .cardboard-container {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    margin-left: 40%;
+    margin-top: 20px;
+  }
+
+  .card-container {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+  }
+
+  .card {
+    width: 300px;
+    margin-top: 20px;
+  }
+
+  .icon-container {
+    height: 50px;
+  }
+
+  .jeremy-card {
+    width: 300px;
+  }
+
+  .desc-container {
+    height: 120px;
+  }
+
+  .card-time {
+    margin-top: -20px;
+  }
+
+  .card-explanation {
+    margin-left: 150px;
+    margin-top: -90px;
+  }
+
+  .report-for {
+    margin-left: 110px;
+    margin-top: -85px;
+  }
+
+  .firstname {
+    margin-left: 110px;
+  }
+
+  .lastname {
+    margin-left: 200px;
+    margin-top: -28px;
+  }
+
+  .main-section {
+    height: 120px;
+  }
+
+  .sub {
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    height: 50px;
+  }
 }
